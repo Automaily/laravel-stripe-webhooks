@@ -25,4 +25,10 @@ return [
      * Spatie\StripeWebhooks\ProcessStripeWebhookJob.
      */
     'model' => \Spatie\StripeWebhooks\ProcessStripeWebhookJob::class,
+
+    /**
+     * The classname of the model to be used to store call. The class should be equal
+     * or extend Spatie\WebhookClient\Models\WebhookCall.
+     */
+    'webhooks_model' => \Spatie\WebhookClient\Models\WebhookCall::class,
 ];
